@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+logs/
+reports/
+cache/
+benchmark/nvme_io_runs/
+diagnostico_qwen3_thinking.txt
+Modelfile.qwen3-no-think
+.env
+.env.*
+*.py[cod]
+*.log
+*.lock
+*.gguf

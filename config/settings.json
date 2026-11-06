@@ -1,0 +1,70 @@
+{
+  "hardware_target": {
+    "os": "Windows",
+    "model_memory_budget_gib": 3.0,
+    "threads": 4,
+    "gpu": "unconfirmed"
+  },
+  "stage_1": {
+    "disk_benchmark_max_mib": 256,
+    "disk_benchmark_hard_limit_mib": 1024,
+    "sequential_block_kib": 1024,
+    "random_read_operations": 128,
+    "random_read_block_bytes": 4096,
+    "writes_enabled": false
+  },
+  "stage_2": {
+    "monitor_samples": 5,
+    "monitor_interval_seconds": 1.0,
+    "memory_safety_reserve_mib": 512,
+    "critical_available_memory_mib": 512,
+    "warning_available_memory_mib": 2048,
+    "warning_physical_memory_load_percent": 85,
+    "critical_physical_memory_load_percent": 95,
+    "warning_commit_percent": 85,
+    "critical_commit_percent": 95,
+    "monitor_changes_system_settings": false
+  },
+  "stage_3": {
+    "block_sizes_kib": [4, 64, 256, 1024, 4096],
+    "mib_per_block_size": 32,
+    "maximum_total_read_mib": 160,
+    "cache_policy": "leave_windows_file_cache_enabled",
+    "writes_enabled": false
+  },
+  "stage_4": {
+    "maximum_cache_mib": 64,
+    "maximum_entries": 2048,
+    "entry_overhead_accounting_bytes": 512,
+    "disable_cache_when_pressure_not_normal": true,
+    "safety_reserve_mib": 512
+  },
+  "stage_5": {
+    "maximum_prefetch_block_mib": 4,
+    "maximum_pending_reads": 1,
+    "stable_stride_observations": 2,
+    "disable_prefetch_when_pressure_not_normal": true,
+    "default_poll_wait_seconds": 0.0
+  },
+  "stage_6": {
+    "engine": "llama.cpp via llama-cpp-python",
+    "n_ctx": 512,
+    "n_batch": 16,
+    "n_threads": 4,
+    "n_gpu_layers": 0,
+    "use_mmap": true,
+    "use_mlock": false,
+    "refuse_on_critical_memory_pressure": true,
+    "allow_warning_with_mmap": true,
+    "single_loaded_model": true
+  },
+  "model": {
+    "name": "Qwen2.5-Coder-7B-Instruct",
+    "format": "GGUF",
+    "preferred_quantization": "Q4_K_M",
+    "file_name": "Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf",
+    "file_path": "%USERPROFILE%\\Downloads\\Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf",
+    "file_size_bytes": 4683074336,
+    "allow_substitute": false
+  }
+}

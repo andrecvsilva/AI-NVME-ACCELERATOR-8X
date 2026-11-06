@@ -1,0 +1,13 @@
+{
+  "drive": "C:",
+  "test_sizes_mib": [16, 64, 256],
+  "sequential_block_kib": 1024,
+  "random_operations": 64,
+  "random_block_kib": [4, 64],
+  "warning_max_file_mib": 16,
+  "warning_random_operations": 16,
+  "maximum_total_temp_mib": 336,
+  "minimum_free_mib": 1024,
+  "memory_poll_seconds": 1.0,
+  "temp_directory": "benchmark/nvme_io_runs"
+}

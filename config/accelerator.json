@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "model_path": "%USERPROFILE%\\Downloads\\Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf",
+  "memory_budget_gib": 3.0,
+  "minimum_available_gib": 2.0,
+  "reserve_mib": 1024,
+  "max_context": 512,
+  "min_context": 128,
+  "max_batch": 16,
+  "min_batch": 4,
+  "max_threads": 4,
+  "observation_interval_seconds": 1.0,
+  "use_mmap": true,
+  "use_mlock": false,
+  "use_extra_bufts": false,
+  "physical_disk_instance": "0 C:",
+  "prefetch_enabled": false,
+  "max_prefetch_mib": 1,
+  "max_generation_tokens": 32,
+  "benchmark_repetitions": 1
+}

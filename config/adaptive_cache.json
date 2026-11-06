@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "nvme_enabled": true,
+  "ram_cache_max_mib": 64,
+  "ram_cache_entries": 2048,
+  "ram_budget_mib": 256,
+  "ram_reserve_mib": 1024,
+  "ram_max_fraction": 0.05,
+  "process_reserve_fraction": 0.1,
+  "process_cache_penalty_fraction": 0.5,
+  "warning_cache_fraction": 0.25,
+  "warning_cache_max_mib": 4,
+  "nvme_directory": "cache/nvme",
+  "nvme_max_mib": 2048,
+  "nvme_min_free_mib": 10240,
+  "nvme_item_max_mib": 8,
+  "entry_ttl_seconds": 604800,
+  "eviction_policy": "HYBRID",
+  "prefetch_enabled": false,
+  "prefetch_block_kib": 64,
+  "prefetch_max_pending": 1
+}
